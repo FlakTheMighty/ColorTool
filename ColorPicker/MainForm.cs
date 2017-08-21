@@ -86,21 +86,21 @@ namespace ColorPicker
         private void rDisplay_TextChanged(object sender, EventArgs e)
         {
             byte.TryParse(rDisplay.Text, out r);
-
+            rSlider.Value = r;
             convertRGBToHex();
         }
 
         private void gDisplay_TextChanged(object sender, EventArgs e)
         {
             byte.TryParse(gDisplay.Text, out g);
-
+            gSlider.Value = g;
             convertRGBToHex();
         }
 
         private void bDisplay_TextChanged(object sender, EventArgs e)
         {
             byte.TryParse(bDisplay.Text, out b);
-
+            bSlider.Value = b;
             convertRGBToHex();
         }
         //no more textboxes
@@ -131,6 +131,9 @@ namespace ColorPicker
                 rDisplay.Text = colorDialog.Color.R.ToString();
                 gDisplay.Text = colorDialog.Color.G.ToString();
                 bDisplay.Text = colorDialog.Color.B.ToString();
+                rSlider.Value = r;
+                gSlider.Value = g;
+                bSlider.Value = b;
 
                 convertRGBToHex();
             }
@@ -219,6 +222,10 @@ namespace ColorPicker
             gDisplay.Text = g.ToString();
             bDisplay.Text = b.ToString();
 
+            rSlider.Value = r;
+            gSlider.Value = g;
+            bSlider.Value = b;
+
             convertRGBToHex();
         }
 
@@ -242,6 +249,10 @@ namespace ColorPicker
                     rDisplay.Text = r.ToString();
                     gDisplay.Text = g.ToString();
                     bDisplay.Text = b.ToString();
+
+                    rSlider.Value = r;
+                    gSlider.Value = g;
+                    bSlider.Value = b;
 
                     convertRGBToHex();
                 }
@@ -281,17 +292,17 @@ namespace ColorPicker
 
         private void rSlider_Scroll(object sender, EventArgs e)
         {
-
+            rDisplay.Text = rSlider.Value.ToString();
         }
 
         private void gSlider_Scroll(object sender, EventArgs e)
         {
-
+            gDisplay.Text = gSlider.Value.ToString();
         }
 
         private void bSlider_Scroll(object sender, EventArgs e)
         {
-
+            bDisplay.Text = bSlider.Value.ToString();
         }
     }
 }

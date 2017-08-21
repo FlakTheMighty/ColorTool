@@ -60,9 +60,10 @@
             this.colorPreview.BackColor = System.Drawing.Color.Black;
             this.colorPreview.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.colorPreview.Controls.Add(this.openColorDialog);
-            this.colorPreview.Location = new System.Drawing.Point(12, 12);
+            this.colorPreview.Location = new System.Drawing.Point(24, 23);
+            this.colorPreview.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.colorPreview.Name = "colorPreview";
-            this.colorPreview.Size = new System.Drawing.Size(287, 110);
+            this.colorPreview.Size = new System.Drawing.Size(572, 210);
             this.colorPreview.TabIndex = 0;
             // 
             // openColorDialog
@@ -74,8 +75,9 @@
             this.openColorDialog.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.openColorDialog.ForeColor = System.Drawing.Color.Transparent;
             this.openColorDialog.Location = new System.Drawing.Point(0, 0);
+            this.openColorDialog.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.openColorDialog.Name = "openColorDialog";
-            this.openColorDialog.Size = new System.Drawing.Size(287, 110);
+            this.openColorDialog.Size = new System.Drawing.Size(574, 212);
             this.openColorDialog.TabIndex = 0;
             this.openColorDialog.UseVisualStyleBackColor = false;
             this.openColorDialog.Click += new System.EventHandler(this.openColorDialog_Click);
@@ -86,9 +88,10 @@
             // 
             // rDisplay
             // 
-            this.rDisplay.Location = new System.Drawing.Point(32, 125);
+            this.rDisplay.Location = new System.Drawing.Point(64, 240);
+            this.rDisplay.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.rDisplay.Name = "rDisplay";
-            this.rDisplay.Size = new System.Drawing.Size(99, 20);
+            this.rDisplay.Size = new System.Drawing.Size(194, 31);
             this.rDisplay.TabIndex = 1;
             this.rDisplay.Text = "0";
             this.rDisplay.TextChanged += new System.EventHandler(this.rDisplay_TextChanged);
@@ -96,26 +99,29 @@
             // rLabel
             // 
             this.rLabel.AutoSize = true;
-            this.rLabel.Location = new System.Drawing.Point(9, 128);
+            this.rLabel.Location = new System.Drawing.Point(18, 246);
+            this.rLabel.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.rLabel.Name = "rLabel";
-            this.rLabel.Size = new System.Drawing.Size(18, 13);
+            this.rLabel.Size = new System.Drawing.Size(33, 25);
             this.rLabel.TabIndex = 2;
             this.rLabel.Text = "R:";
             // 
             // gLabel
             // 
             this.gLabel.AutoSize = true;
-            this.gLabel.Location = new System.Drawing.Point(9, 154);
+            this.gLabel.Location = new System.Drawing.Point(18, 296);
+            this.gLabel.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.gLabel.Name = "gLabel";
-            this.gLabel.Size = new System.Drawing.Size(18, 13);
+            this.gLabel.Size = new System.Drawing.Size(34, 25);
             this.gLabel.TabIndex = 4;
             this.gLabel.Text = "G:";
             // 
             // gDisplay
             // 
-            this.gDisplay.Location = new System.Drawing.Point(32, 151);
+            this.gDisplay.Location = new System.Drawing.Point(64, 290);
+            this.gDisplay.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.gDisplay.Name = "gDisplay";
-            this.gDisplay.Size = new System.Drawing.Size(99, 20);
+            this.gDisplay.Size = new System.Drawing.Size(194, 31);
             this.gDisplay.TabIndex = 3;
             this.gDisplay.Text = "0";
             this.gDisplay.TextChanged += new System.EventHandler(this.gDisplay_TextChanged);
@@ -123,17 +129,19 @@
             // bLabel
             // 
             this.bLabel.AutoSize = true;
-            this.bLabel.Location = new System.Drawing.Point(9, 180);
+            this.bLabel.Location = new System.Drawing.Point(18, 346);
+            this.bLabel.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.bLabel.Name = "bLabel";
-            this.bLabel.Size = new System.Drawing.Size(17, 13);
+            this.bLabel.Size = new System.Drawing.Size(32, 25);
             this.bLabel.TabIndex = 6;
             this.bLabel.Text = "B:";
             // 
             // bDisplay
             // 
-            this.bDisplay.Location = new System.Drawing.Point(32, 177);
+            this.bDisplay.Location = new System.Drawing.Point(64, 340);
+            this.bDisplay.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.bDisplay.Name = "bDisplay";
-            this.bDisplay.Size = new System.Drawing.Size(99, 20);
+            this.bDisplay.Size = new System.Drawing.Size(194, 31);
             this.bDisplay.TabIndex = 5;
             this.bDisplay.Text = "0";
             this.bDisplay.TextChanged += new System.EventHandler(this.bDisplay_TextChanged);
@@ -141,26 +149,29 @@
             // hexLabel
             // 
             this.hexLabel.AutoSize = true;
-            this.hexLabel.Location = new System.Drawing.Point(166, 128);
+            this.hexLabel.Location = new System.Drawing.Point(332, 246);
+            this.hexLabel.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.hexLabel.Name = "hexLabel";
-            this.hexLabel.Size = new System.Drawing.Size(29, 13);
+            this.hexLabel.Size = new System.Drawing.Size(56, 25);
             this.hexLabel.TabIndex = 8;
             this.hexLabel.Text = "Hex:";
             // 
             // hexDisplay
             // 
-            this.hexDisplay.Location = new System.Drawing.Point(200, 125);
+            this.hexDisplay.Location = new System.Drawing.Point(400, 240);
+            this.hexDisplay.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.hexDisplay.Name = "hexDisplay";
-            this.hexDisplay.Size = new System.Drawing.Size(99, 20);
+            this.hexDisplay.Size = new System.Drawing.Size(194, 31);
             this.hexDisplay.TabIndex = 7;
             this.hexDisplay.Text = "#";
             this.hexDisplay.TextChanged += new System.EventHandler(this.hexDisplay_TextChanged);
             // 
             // randomColor
             // 
-            this.randomColor.Location = new System.Drawing.Point(200, 149);
+            this.randomColor.Location = new System.Drawing.Point(400, 287);
+            this.randomColor.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.randomColor.Name = "randomColor";
-            this.randomColor.Size = new System.Drawing.Size(99, 23);
+            this.randomColor.Size = new System.Drawing.Size(198, 44);
             this.randomColor.TabIndex = 11;
             this.randomColor.Text = "Random Color";
             this.randomColor.UseVisualStyleBackColor = true;
@@ -168,9 +179,10 @@
             // 
             // aboutButton
             // 
-            this.aboutButton.Location = new System.Drawing.Point(200, 175);
+            this.aboutButton.Location = new System.Drawing.Point(400, 337);
+            this.aboutButton.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.aboutButton.Name = "aboutButton";
-            this.aboutButton.Size = new System.Drawing.Size(99, 23);
+            this.aboutButton.Size = new System.Drawing.Size(198, 44);
             this.aboutButton.TabIndex = 12;
             this.aboutButton.Text = "About";
             this.aboutButton.UseVisualStyleBackColor = true;
@@ -180,9 +192,10 @@
             // 
             this.saveColor.BackgroundImage = global::ColorPicker.Properties.Resources.floppy_disk;
             this.saveColor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.saveColor.Location = new System.Drawing.Point(148, 170);
+            this.saveColor.Location = new System.Drawing.Point(296, 327);
+            this.saveColor.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.saveColor.Name = "saveColor";
-            this.saveColor.Size = new System.Drawing.Size(32, 32);
+            this.saveColor.Size = new System.Drawing.Size(64, 62);
             this.saveColor.TabIndex = 13;
             this.toolTip.SetToolTip(this.saveColor, "Save current color to file");
             this.saveColor.UseVisualStyleBackColor = true;
@@ -191,53 +204,51 @@
             // lblInfo
             // 
             this.lblInfo.AutoSize = true;
-            this.lblInfo.Location = new System.Drawing.Point(307, 12);
+            this.lblInfo.Location = new System.Drawing.Point(614, 23);
+            this.lblInfo.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblInfo.Name = "lblInfo";
-            this.lblInfo.Size = new System.Drawing.Size(170, 26);
+            this.lblInfo.Size = new System.Drawing.Size(344, 50);
             this.lblInfo.TabIndex = 14;
             this.lblInfo.Text = "Press F1 to select the color where \r\nyour cursor is pointed.";
             // 
             // rSlider
             // 
-            this.rSlider.Enabled = false;
-            this.rSlider.Location = new System.Drawing.Point(310, 55);
+            this.rSlider.Location = new System.Drawing.Point(620, 106);
+            this.rSlider.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.rSlider.Maximum = 255;
             this.rSlider.Name = "rSlider";
-            this.rSlider.Size = new System.Drawing.Size(157, 45);
+            this.rSlider.Size = new System.Drawing.Size(314, 90);
             this.rSlider.TabIndex = 15;
             this.rSlider.TabStop = false;
-            this.rSlider.Visible = false;
             this.rSlider.Scroll += new System.EventHandler(this.rSlider_Scroll);
             // 
             // gSlider
             // 
-            this.gSlider.Enabled = false;
-            this.gSlider.Location = new System.Drawing.Point(310, 103);
+            this.gSlider.Location = new System.Drawing.Point(620, 198);
+            this.gSlider.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.gSlider.Maximum = 255;
             this.gSlider.Name = "gSlider";
-            this.gSlider.Size = new System.Drawing.Size(157, 45);
+            this.gSlider.Size = new System.Drawing.Size(314, 90);
             this.gSlider.TabIndex = 16;
             this.gSlider.TabStop = false;
-            this.gSlider.Visible = false;
             this.gSlider.Scroll += new System.EventHandler(this.gSlider_Scroll);
             // 
             // bSlider
             // 
-            this.bSlider.Enabled = false;
-            this.bSlider.Location = new System.Drawing.Point(310, 151);
+            this.bSlider.Location = new System.Drawing.Point(620, 290);
+            this.bSlider.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.bSlider.Maximum = 255;
             this.bSlider.Name = "bSlider";
-            this.bSlider.Size = new System.Drawing.Size(157, 45);
+            this.bSlider.Size = new System.Drawing.Size(314, 90);
             this.bSlider.TabIndex = 17;
             this.bSlider.TabStop = false;
-            this.bSlider.Visible = false;
             this.bSlider.Scroll += new System.EventHandler(this.bSlider_Scroll);
             // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(479, 205);
+            this.ClientSize = new System.Drawing.Size(958, 394);
             this.Controls.Add(this.lblInfo);
             this.Controls.Add(this.saveColor);
             this.Controls.Add(this.aboutButton);
@@ -256,6 +267,7 @@
             this.Controls.Add(this.rSlider);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.MaximizeBox = false;
             this.Name = "MainForm";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
