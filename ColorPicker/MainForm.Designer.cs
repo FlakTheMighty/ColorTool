@@ -60,10 +60,10 @@
             this.colorPreview.BackColor = System.Drawing.Color.Black;
             this.colorPreview.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.colorPreview.Controls.Add(this.openColorDialog);
-            this.colorPreview.Location = new System.Drawing.Point(24, 23);
+            this.colorPreview.Location = new System.Drawing.Point(282, 12);
             this.colorPreview.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.colorPreview.Name = "colorPreview";
-            this.colorPreview.Size = new System.Drawing.Size(572, 210);
+            this.colorPreview.Size = new System.Drawing.Size(661, 210);
             this.colorPreview.TabIndex = 0;
             // 
             // openColorDialog
@@ -74,10 +74,10 @@
             this.openColorDialog.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.openColorDialog.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.openColorDialog.ForeColor = System.Drawing.Color.Transparent;
-            this.openColorDialog.Location = new System.Drawing.Point(0, 0);
+            this.openColorDialog.Location = new System.Drawing.Point(-1, -1);
             this.openColorDialog.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.openColorDialog.Name = "openColorDialog";
-            this.openColorDialog.Size = new System.Drawing.Size(574, 212);
+            this.openColorDialog.Size = new System.Drawing.Size(661, 210);
             this.openColorDialog.TabIndex = 0;
             this.openColorDialog.UseVisualStyleBackColor = false;
             this.openColorDialog.Click += new System.EventHandler(this.openColorDialog_Click);
@@ -149,7 +149,7 @@
             // hexLabel
             // 
             this.hexLabel.AutoSize = true;
-            this.hexLabel.Location = new System.Drawing.Point(332, 246);
+            this.hexLabel.Location = new System.Drawing.Point(677, 346);
             this.hexLabel.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.hexLabel.Name = "hexLabel";
             this.hexLabel.Size = new System.Drawing.Size(56, 25);
@@ -158,17 +158,17 @@
             // 
             // hexDisplay
             // 
-            this.hexDisplay.Location = new System.Drawing.Point(400, 240);
+            this.hexDisplay.Location = new System.Drawing.Point(745, 340);
             this.hexDisplay.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.hexDisplay.Name = "hexDisplay";
-            this.hexDisplay.Size = new System.Drawing.Size(194, 31);
+            this.hexDisplay.Size = new System.Drawing.Size(198, 31);
             this.hexDisplay.TabIndex = 7;
             this.hexDisplay.Text = "#";
             this.hexDisplay.TextChanged += new System.EventHandler(this.hexDisplay_TextChanged);
             // 
             // randomColor
             // 
-            this.randomColor.Location = new System.Drawing.Point(400, 287);
+            this.randomColor.Location = new System.Drawing.Point(745, 234);
             this.randomColor.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.randomColor.Name = "randomColor";
             this.randomColor.Size = new System.Drawing.Size(198, 44);
@@ -179,7 +179,7 @@
             // 
             // aboutButton
             // 
-            this.aboutButton.Location = new System.Drawing.Point(400, 337);
+            this.aboutButton.Location = new System.Drawing.Point(745, 284);
             this.aboutButton.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.aboutButton.Name = "aboutButton";
             this.aboutButton.Size = new System.Drawing.Size(198, 44);
@@ -192,7 +192,7 @@
             // 
             this.saveColor.BackgroundImage = global::ColorPicker.Properties.Resources.floppy_disk;
             this.saveColor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.saveColor.Location = new System.Drawing.Point(296, 327);
+            this.saveColor.Location = new System.Drawing.Point(669, 266);
             this.saveColor.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.saveColor.Name = "saveColor";
             this.saveColor.Size = new System.Drawing.Size(64, 62);
@@ -204,44 +204,50 @@
             // lblInfo
             // 
             this.lblInfo.AutoSize = true;
-            this.lblInfo.Location = new System.Drawing.Point(614, 23);
+            this.lblInfo.Location = new System.Drawing.Point(18, 68);
             this.lblInfo.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblInfo.Name = "lblInfo";
-            this.lblInfo.Size = new System.Drawing.Size(344, 50);
+            this.lblInfo.Size = new System.Drawing.Size(225, 75);
             this.lblInfo.TabIndex = 14;
-            this.lblInfo.Text = "Press F1 to select the color where \r\nyour cursor is pointed.";
+            this.lblInfo.Text = "Press F1 to select \r\nthe color where \r\nyour cursor is pointed.";
             // 
             // rSlider
             // 
-            this.rSlider.Location = new System.Drawing.Point(620, 106);
+            this.rSlider.AutoSize = false;
+            this.rSlider.Location = new System.Drawing.Point(282, 240);
             this.rSlider.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.rSlider.Maximum = 255;
             this.rSlider.Name = "rSlider";
-            this.rSlider.Size = new System.Drawing.Size(314, 90);
+            this.rSlider.Size = new System.Drawing.Size(314, 31);
             this.rSlider.TabIndex = 15;
             this.rSlider.TabStop = false;
+            this.rSlider.TickStyle = System.Windows.Forms.TickStyle.None;
             this.rSlider.Scroll += new System.EventHandler(this.rSlider_Scroll);
             // 
             // gSlider
             // 
-            this.gSlider.Location = new System.Drawing.Point(620, 198);
+            this.gSlider.AutoSize = false;
+            this.gSlider.Location = new System.Drawing.Point(282, 290);
             this.gSlider.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.gSlider.Maximum = 255;
             this.gSlider.Name = "gSlider";
-            this.gSlider.Size = new System.Drawing.Size(314, 90);
+            this.gSlider.Size = new System.Drawing.Size(314, 31);
             this.gSlider.TabIndex = 16;
             this.gSlider.TabStop = false;
+            this.gSlider.TickStyle = System.Windows.Forms.TickStyle.None;
             this.gSlider.Scroll += new System.EventHandler(this.gSlider_Scroll);
             // 
             // bSlider
             // 
-            this.bSlider.Location = new System.Drawing.Point(620, 290);
+            this.bSlider.AutoSize = false;
+            this.bSlider.Location = new System.Drawing.Point(282, 340);
             this.bSlider.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.bSlider.Maximum = 255;
             this.bSlider.Name = "bSlider";
-            this.bSlider.Size = new System.Drawing.Size(314, 90);
+            this.bSlider.Size = new System.Drawing.Size(314, 31);
             this.bSlider.TabIndex = 17;
             this.bSlider.TabStop = false;
+            this.bSlider.TickStyle = System.Windows.Forms.TickStyle.None;
             this.bSlider.Scroll += new System.EventHandler(this.bSlider_Scroll);
             // 
             // MainForm
@@ -249,7 +255,6 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(958, 394);
-            this.Controls.Add(this.lblInfo);
             this.Controls.Add(this.saveColor);
             this.Controls.Add(this.aboutButton);
             this.Controls.Add(this.randomColor);
@@ -261,10 +266,11 @@
             this.Controls.Add(this.gDisplay);
             this.Controls.Add(this.rLabel);
             this.Controls.Add(this.rDisplay);
-            this.Controls.Add(this.colorPreview);
             this.Controls.Add(this.bSlider);
             this.Controls.Add(this.gSlider);
             this.Controls.Add(this.rSlider);
+            this.Controls.Add(this.lblInfo);
+            this.Controls.Add(this.colorPreview);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
